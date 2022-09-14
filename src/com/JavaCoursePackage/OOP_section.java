@@ -89,9 +89,9 @@ public class OOP_section{
 //      ArrayList: (dynamic array)
 
         // declaration:
-        ArrayList<Integer> list = new ArrayList<Integer>(); // the length of the array is by default 10, but the size is 0
-        ArrayList<Integer> list2 = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 90, 8, 9, 10)); // initialize the list with values of type int
-        ArrayList list3 = new ArrayList(Arrays.asList(1, "hello", 3.14, 'A', true)); // can add different types of elements, if the type is not specified
+//        ArrayList<Integer> list = new ArrayList<Integer>(); // the length of the array is by default 10, but the size is 0
+//        ArrayList<Integer> list2 = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 90, 8, 9, 10)); // initialize the list with values of type int
+//        ArrayList list3 = new ArrayList(Arrays.asList(1, "hello", 3.14, 'A', true)); // can add different types of elements, if the type is not specified
 
 
         // some methods:
@@ -123,6 +123,134 @@ public class OOP_section{
 //        list.toString(); // return a string of the elements in the array
 
 
+        //  anonymous inner class: (c class without name)
+//        Classes.NewClasss object = new Classes.NewClasss() {
+//            @Override
+//            public void move() {
+//                System.out.println("anonymous inner class");
+//            }
+//        };
+//        object.move();
+
+
+        //  var keyword: (the type of the variable is determined by the value)
+//        var x = 5; System.out.println(x + " is of type: " + ((Object)x).getClass().getSimpleName());
+//        var y = "hello"; System.out.println(y + " is of type: " + ((Object)y).getClass().getSimpleName());
+//        var z = 3.14; System.out.println(z + " is of type: " + ((Object)z).getClass().getSimpleName());
+
+
+
+//        enums: (enumeration, a special "class" that represents a group of constants, as a data type)
+
+        enum Color { // simple enum
+            RED, GREEN, BLUE, YELLOW, BLACK, WHITE, PINK, ORANGE, PURPLE, BROWN, GRAY, GOLD, SILVER
+        }
+
+        enum Days { // enum with constructor
+            SUNDAY("weekend"), MONDAY("workday"), TUESDAY("workday"), WEDNESDAY("workday"), THURSDAY("workday"), FRIDAY("workday"), SATURDAY("weekend");
+
+            private final String type;
+
+            Days(String typeOfDay) {
+                this.type = typeOfDay;
+            }
+
+            public String dayOf() {
+                return type;
+            }
+        }
+
+        enum Months { // enum with methods
+            JANUARY(31), FEBRUARY(28), MARCH(31), APRIL(30), MAY(31), JUNE(30), JULY(31), AUGUST(31), SEPTEMBER(30), OCTOBER(31), NOVEMBER(30), DECEMBER(31);
+
+            private final int days;
+
+            Months(int daysInMonth) {
+                this.days = daysInMonth;
+            }
+
+            public int getDays() {
+                return days;
+            }
+        }
+
+        enum Animals implements SelfDrivable.enum_interface{ // enum implements an interface
+            DOG("barks"), CAT("meows"), COW("moos"), HORSE("neighs"), CHICKEN("clucks");
+
+            private final String sound;
+
+            Animals(String soundOfAnimal) {
+                this.sound = soundOfAnimal;
+            }
+
+            public String getSound() {
+                return this.sound;
+            }
+        }
+
+        enum Cars { // enum with abstract method
+            BMW("BMW"){ // anonymous inner class (implements the abstract method type())
+                @Override
+                public String type() {
+                    return "Sport Car";
+                }
+            },MERCEDES("Mercedes"){ // anonymous inner class (implements the abstract method type())
+                @Override
+                public String  type() {
+                    return "Luxury Car";
+                }
+            };
+
+            private final String type;
+            Cars(String type) { // constructor
+                this.type = type;
+            }
+
+            abstract String type(); // abstract method
+        }
+
+        enum Planets { // enum with static method
+            MERCURY(3.303e+23, 2.4397e6), VENUS(4.869e+24, 6.0518e6), EARTH(5.976e+24, 6.37814e6);
+
+            private final double mass; // in kilograms
+            private final double radius; // in meters
+            private static final double G = 6.67300E-11;
+
+            Planets(double mass, double radius) {
+                this.mass = mass;
+                this.radius = radius;
+            }
+
+            public double surfaceGravity() {
+                return G * mass / (radius * radius);
+            }
+
+            public static double surfaceWeight(Planets p, double otherMass) {
+                return otherMass * p.surfaceGravity();
+            }
+        }
+
+
+
+
+
+//        EnumSet: (a specialized Set implementation for use with enum types)
+
+//        EnumSet<Months> month = EnumSet.of(Months.APRIL, Months.DECEMBER); // create an EnumSet with the elements APRIL and DECEMBER
+//        EnumSet<Months> month = EnumSet.allOf(Months.class); // create an EnumSet with all the elements of the enum Months
+//        EnumSet<Months> month = EnumSet.noneOf(Months.class); // create an empty EnumSet
+//        EnumSet<Months> month = EnumSet.range(Months.APRIL, Months.SEPTEMBER); // create an EnumSet with the elements from APRIL to DECEMBER
+        EnumSet<Months> month = EnumSet.complementOf(EnumSet.range(Months.APRIL, Months.SEPTEMBER)); // create an EnumSet with all the elements except APRIL to DECEMBER
+
+//        some methods in EnumSet:
+//        month.add(Months.JANUARY); // add JANUARY to the EnumSet
+//        month.remove(Months.JANUARY); // remove JANUARY from the EnumSet
+//        month.contains(Months.JANUARY); // return true if the EnumSet contains JANUARY
+//        month.size(); // return the size of the EnumSet
+//        month.isEmpty(); // return true if the EnumSet is empty
+//        month.clear(); // clear the EnumSet
+//        month.clone(); // return a copy of the EnumSet
+//        month.equals(month); // return true if the two EnumSets are equal
 
 
 

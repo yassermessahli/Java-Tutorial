@@ -348,12 +348,60 @@ public class Classes {
 //    interface: (can't be instantiated, can only be inherited) (full abstraction)
 //    all the methods in an interface are abstract by default, and all the variables are final by default
 
+    public static class NewClasss implements SelfDrivable{
+        @Override
+        public void move(){
+            System.out.println("NewClasss");
+        }
+        @Override
+        public boolean atteint_destination(){
+            return true;
+        }
+        @Override
+        public boolean is_safe(){
+            return true;
+        }
+    }
 
 
+//    public static class NewClass2 implements Interface1, Interface2{ // multiple inheritance (implementing multiple interfaces)
+//        @Override
+//        public void print() {
+//            System.out.println("NewClass2");
+//        }
+//        @Override
+//        public void print2() {
+//            System.out.println("NewClass2");
+//        }
+//    }
+
+//    public static class NewClass3 extends Class1 implements Interface1{ // multiple inheritance (extend a class and implement an interface)
+//        @Override
+//        public void print() {
+//            System.out.println("NewClass3");
+//        }
+//    }
+
+//    public static class NewClass4 implements Interface1.Interface2{ // implementing an inner interface
+//        @Override
+//        public void print() {
+//            System.out.println("NewClass4");
+//        }
+//    }
+
+    public static class NewClass5 implements SelfDrivable.MarkerInterface{ // implementing a marker interface
+        //can be empty
+    }
+
+    public static class NewClass6 <T> implements SelfDrivable.GenericInterface <T> { // implementing a generic interface
+        @Override
+        public T get(){
+            return (T) new NewClass5();
+        }
+    }
 
 
-
-
+    //  enum: (enumeration: a special class that represents a group of constants, as a set of predefined data types)
 
 
 
