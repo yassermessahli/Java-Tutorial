@@ -400,8 +400,21 @@ public class Classes {
         }
     }
 
+    public static class MyException extends RuntimeException{
 
-    //  enum: (enumeration: a special class that represents a group of constants, as a set of predefined data types)
+        public MyException(String ex){
+            super(ex);
+        }
+    }
+
+
+
+
+
+
+
+
+
 
 
 
