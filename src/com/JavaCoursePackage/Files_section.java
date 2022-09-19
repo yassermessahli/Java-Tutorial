@@ -1,11 +1,7 @@
 package com.JavaCoursePackage;
 
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.*;
 
 
 public class Files_section{
@@ -47,8 +43,8 @@ public class Files_section{
 
 
 //        File class:
-        File file3 = new File("hello.txt");  // create a file object.
-        System.out.println("file exist: " + file3.exists()); // check if the file exists.
+//        File file3 = new File("hello.txt");  // create a file object.
+//        System.out.println("file exist: " + file3.exists()); // check if the file exists.
 
 
 
@@ -83,11 +79,9 @@ public class Files_section{
 //        System.out.println("set read only: " + file3.setReadOnly());  // set the file read only.
 
 
-
-
-
-
-
+        FileWriter file4 = new FileWriter("files/output_file.txt");  // create a file writer object.
+        file4.write("Hello World!");  // write to the file.
+        file4.flush();  // flush the file.
 
 
 

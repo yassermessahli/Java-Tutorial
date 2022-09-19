@@ -323,10 +323,23 @@ public class OOP_section{
 
 
 
+        String text = """
+                ali ahmad 16 yo 02342343423
+                ahmad ali 17 yo 02342343423
+                rayan mohamed 18 yo 02342343423
+                kamal ali 19 yo 02342343423
+                """;
 
-
-
-
+        for(String line : text.split("\n")){
+            String[] spl = line.split(" ");
+            System.out.print("=========================\n");
+            System.out.printf("""
+                    first name: %s
+                    last name: %s
+                    age: %s %s
+                    number: %s\n
+                    """, spl[0], spl[1], spl[2], spl[3], spl[4]);
+        }
 
 
 
