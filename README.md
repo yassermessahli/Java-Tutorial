@@ -61,6 +61,8 @@ This is a Quick tutorial for Java programming language, made by **[me](https://g
 but I decided to share it with you, so you can learn Java programming language basics in a short time.
 It is a collection of notes and examples that I have gathered.
 I have tried to make it as simple as possible and I hope it will be useful for you.
+####
+For more examples and details, read the code attached with this repository, which have manythings that i have not mentioned here in the README.md file.
 
 ### Who is this tutorial for?
 This tutorial is for:
