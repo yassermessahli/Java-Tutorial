@@ -232,7 +232,7 @@ public class Classes {
         String name;
         Employee1 manager;
 
-        public Depart(String name, Employee1 manager) { // create an instance of manager class outside this class then just use it
+        public Depart(String name, Employee1 manager){ // create an instance of manager class outside this class then just use it
             this.name = name;
             this.manager = manager;
         }
@@ -364,30 +364,30 @@ public class Classes {
     }
 
 
-//    public static class NewClass2 implements Interface1, Interface2{ // multiple inheritance (implementing multiple interfaces)
-//        @Override
-//        public void print() {
-//            System.out.println("NewClass2");
-//        }
-//        @Override
-//        public void print2() {
-//            System.out.println("NewClass2");
-//        }
-//    }
+    public static class NewClass2 implements Interface1, Interface2{ // multiple inheritance (implementing multiple interfaces)
+        @Override
+        public void print() {
+            System.out.println("NewClass2");
+        }
+        @Override
+        public void print2() {
+            System.out.println("NewClass2");
+        }
+    }
 
-//    public static class NewClass3 extends Class1 implements Interface1{ // multiple inheritance (extend a class and implement an interface)
-//        @Override
-//        public void print() {
-//            System.out.println("NewClass3");
-//        }
-//    }
+    public static class NewClass3 extends Class1 implements Interface1{ // multiple inheritance (extend a class and implement an interface)
+        @Override
+        public void print() {
+            System.out.println("NewClass3");
+        }
+    }
 
-//    public static class NewClass4 implements Interface1.Interface2{ // implementing an inner interface
-//        @Override
-//        public void print() {
-//            System.out.println("NewClass4");
-//        }
-//    }
+    public static class NewClass4 implements Interface1.Interface2{ // implementing an inner interface
+        @Override
+        public void print() {
+            System.out.println("NewClass4");
+        }
+    }
 
     public static class NewClass5 implements SelfDrivable.MarkerInterface{ // implementing a marker interface
         //can be empty

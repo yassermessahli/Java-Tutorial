@@ -12,41 +12,41 @@
 #### - [Hello World](#hello-world)
 
 #### 1. [Basics](#basics)
-   - [Variables](#variables)
-   - [Data Types](#data-types)
-   - [Operators](#operators)
-   - [Controle Statements](#conditions)
-   - [Loops](#loops)
-   - [Arrays](#arrays)
-   - [Methods](#methods)
+- [Variables](#variables)
+- [Data Types](#data-types)
+- [Operators](#operators)
+- [Controle Statements](#conditions)
+- [Loops](#loops)
+- [Arrays](#arrays)
+- [Methods](#methods)
 
-#### 1. [Object-Oriented Programming](#object-oriented-programming)
-   - [Classes](#classes)
-   - [Objects](#objects)
-   - [Inheritance](#inheritance)
-   - [Polymorphism](#polymorphism)
-   - [Encapsulation](#encapsulation)
-   - [Abstraction](#abstraction)
-   - [Interfaces](#interfaces)
-   - [Packages](#packages)
+#### 1. [Object-Oriented Programming](#Object Oriented Programming)
+- [Classes](#classes)
+- [Objects](#objects)
+- [Inheritance](#inheritance)
+- [Polymorphism](#polymorphism)
+- [Encapsulation](#encapsulation)
+- [Abstraction](#abstraction)
+- [Interfaces](#interfaces)
+- [Packages](#packages)
 
 #### 3. [Advanced](#advanced)
-   - [Exceptions](#exceptions)
-   - [Generics](#generics)
-   - [Collections](#collections)
-   - [Threads](#threads)
-   - [Lambda Expressions](#lambda-expressions)
-   - [Streams](#streams)
-   - [Files](#files)
-   - [Networking](#networking)
-   - [GUI](#gui)
+- [Exceptions](#exceptions)
+- [Generics](#generics)
+- [Collections](#collections)
+- [Threads](#threads)
+- [Lambda Expressions](#lambda-expressions)
+- [Streams](#streams)
+- [Files](#files)
+- [Networking](#networking)
+- [GUI](#gui)
 
 #### 4. [Resources](#resources)
-   - [Books](#books)
-   - [Websites](#websites)
-   - [YouTube](#youtube)
-   - [Courses](#courses)
-   - [Tutorials](#tutorials)
+- [Books](#books)
+- [Websites](#websites)
+- [YouTube](#youtube)
+- [Courses](#courses)
+- [Tutorials](#tutorials)
 
 #### - [Contribute](#contribute)
 #### - [About me](#about)
@@ -97,7 +97,7 @@ This tutorial is for:
 
 ## Hello World
 
-Java programming language is Object-Oriented Programming language, so anything in its program is a class. 
+Java programming language is Object-Oriented Programming language, so anything in its program is a class.
 We need first to create a class to run our code. and all the classes are in folder called Package (begin with a capital letter "com").
 
 #### Main structure of a Java program:
@@ -508,7 +508,7 @@ int number = increment(5);
 hello();
 ```
 
-## 2) Object-Oriented Programming
+## 2) Object Oriented Programming
 
 ### Classes
 
@@ -1220,9 +1220,8 @@ please read my [README.md](https://github.com/yassermessahli) file to know more 
 
 ## Contact
 
-if you have any questions, please contact me on: 
+if you have any questions, please contact me on:
 - [LinkedIn](https://www.linkedin.com/in/yassermessahli)
 - [Twitter](https://twitter.com/yassermessahli)
 - [Instagram](https://www.instagram.com/_ya6r/)
 - [github](https://github.com/yassermessahli)
-
